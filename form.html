@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/icons/fontawesome/css/all.css">
+    
+    <nav class="navbar sticky-top" style="background-color: #f5d43e;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="btn btn-primary" href="cart.html" role="button"><i class="fas fa-shopping-cart fa-bounce"></i></a>
+          
+          <form class="d-flex" id="form" role="search">
+    
+            <input class="form-control me-2" type="search" placeholder="?מה מחפשים" aria-label="Search"  name="product_search">
+            <a class="btn btn-primary"  onclick="func_search()" role="button"> 
+                 <i class="fas fa-search "></i>
+                </a>
+          </form>
+         
+          <a class="navbar-brand" href="index.html"><img src="images1/logo.webp" width="170"/></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+           
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  onclick="func_links('Stationery')">מכשירי כתיבה </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  onclick="func_links('Filing')">תיוק ואחסון</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" onclick="func_links('Paper')">נייר ומוצריו</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="func_links('Electronics')">אלקטרוניקה</a>
+              </li>
+              
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+<br>
+
+        <form name="user" id="user" action="finish.html"><br>
+         
+            <img src="images1/logo.webp" width="190"/><br><br>
+
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="password" name="password" placeholder=">הכנס סיסמא"   required="required">
+              <label for="floatingPassword">הכנס סיסמא</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" name="email"   placeholder="האימייל שלכם" required="required">
+                <label for="floatingInput">האימייל שלכם </label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="firstname" name="firstname"  placeholder="שם פרטי" required="required">
+                <label for="floatingInput">שם פרטי</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="lastname" name="lastname"  placeholder="שם משפחה" required="required">
+                <label for="floatingInput">שם משפחה</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="city"  name="city" placeholder= "עיר מגורים" required="required">
+                <label for="floatingInput">עיר מגורים</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="street" name="street" placeholder= "כתובת רחוב ומספר בנין"  required="required">
+                <label for="floatingInput">כתובת רחוב ומספר בנין</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floor"  name="floor" placeholder= "זה המקום לכתוב את הקומה שלכם (ראשונה/ שניה...), מספר הדירה, מספר הכניסה וכו" >
+                <label for="floatingInput">זה המקום לכתוב את הקומה שלכם (ראשונה/ שניה...), מספר הדירה, מספר הכניסה וכו</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="tel" name="tel" placeholder= "טלפון" required="required">
+                <label for="floatingInput">טלפון</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="credit_card"  name="credit_card" placeholder= "מספר כרטיס אשראי" required="required">
+                <label for="floatingInput"> מספר כרטיס אשראי</label>
+              </div>
+              <button type="submit" class="btn btn-primary" id="sumbit_button">לתשלום וסיום קניה</button>
+                <br><br>
+                <div id="sumToPay"></div><br>
+              
+                </form>
+                <br><br>
+                
+
+        <style>
+          .nav-item{
+              cursor: pointer;
+            }
+          form[name=user] {
+              text-align: center;
+              width: 50%;
+              height: 10%;
+              margin: auto ;
+              border: 2px solid rgb(27, 15, 15);
+              background-color: rgb(238, 238, 238);
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+
+    </style>
+        <script src="app_form.js"></script>
+        <script src="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/icons/fontawesome/css/all.css">
+</head>
+
+<body>
+  <nav class="navbar sticky-top" style="background-color: #f5d43e;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="btn btn-primary" href="cart.html" role="button"><i class="fas fa-shopping-cart fa-bounce"></i></a>
+      <form class="d-flex" id="form" role="search">
+        <input class="form-control me-2" type="search" placeholder="?מה מחפשים" aria-label="Search"
+          name="product_search">
+        <a class="btn btn-primary" onclick="func_search()" role="button">
+          <i class="fas fa-search "></i>
+        </a>
+      </form>
+
+      <a class="navbar-brand" href="index.html"><img src="images1/logo.webp" width="170" /></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" onclick="func_links('Stationery')">מכשירי כתיבה </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="func_links('Filing')">תיוק ואחסון</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="func_links('Paper')">נייר ומוצריו</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="func_links('Electronics')">אלקטרוניקה</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images1/a4.png">
+      <!-- <p>Some text in the Modal..</p> -->
+    </div>
+
+  </div>
+
+  <div id="product"></div>
+  <script src="jquery.js"></script>
+  <script src="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+  <script src="app2.js"></script>
+  <style>
+    .nav-item {
+      cursor: pointer;
+    }
+
+    body {
+      background-color: rgb(247, 245, 241);
+    }
+
+
+    #product {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      margin: auto;
+      justify-content: space-between;
+
+    }
+
+    h2 {
+      margin-top: 6%;
+      text-align: center;
+      padding: 0px;
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h3 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 6%;
+      text-align: center;
+      padding: 0px;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+    }
+
+    h4 {
+      margin-top: 6%;
+      text-align: center;
+      padding: 0px;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+    }
+
+    .bold {
+      border: 2.5px solid #f5d43e;
+      border-radius: 3px;
+
+    }
+
+    .div {
+      margin-top: 4%;
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      width: 300px;
+      height: 360px;
+      text-align: center;
+      margin-bottom: 15px;
+      padding: 12px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .div img {
+      width: 180px;
+      height: 170px;
+      margin-bottom: auto;
+    }
+
+    .div button {
+      font-size: 14px;
+      background-color: #f5d43e;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* The Modal (background) */
+    .myModal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100vw;
+      /* Full width */
+      height: 100vw;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #ffffff;
+      margin-left: 35vw;
+      margin-top: 10vw;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 30%;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+      direction: rtl;
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</body>
+
+</html>

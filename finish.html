@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/icons/fontawesome/css/all.css">
+<body>
+  
+  <div id="link">
+    <a href="index.html"><img src="images1/logo.webp" width="150" /></a>
+  </div>
+  <div id="all">
+    <div id="button_Details">
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        פרטי ההזמנה
+      </button>
+    </div>
+    <br><br>
+    <div id="text">
+      <h2> .תודה שקניתם </h2>
+
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal-dialog modal-dialog-scrollable" id="myModal">
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel"><img src="images1/logo.webp" width="190" /></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="model_body">
+
+          </div>
+          <div class="modal-footer">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+    body {
+      background-image: url('images1/a3.webp');
+      background-size: cover;
+      text-align: center;
+      margin: 0%;
+    }
+
+    #link {
+      margin-top: 1%;
+    }
+
+    h2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      size: 100%;
+      font-size: 40px;
+    }
+
+    #text {
+      margin-right: 39vw;
+      margin-top: 19vw;
+      display: inline-block;
+      width: 50%;
+      justify-content: space-between;
+
+    }
+
+    #button_Details {
+      margin-left: 46vw;
+      margin-top: 12vw;
+      animation: ch 2s forwards;
+      display: inline-block;
+      width: 50%;
+      justify-content: space-between;
+
+    }
+
+    @keyframes ch {
+      0% {
+        transform: scale(0.7);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(0.4);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</body>
+<script src="app_finish.js"></script>
+<script src="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+
+</html>
